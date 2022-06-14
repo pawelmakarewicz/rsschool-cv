@@ -5,11 +5,130 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>CV Task</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <title>CV</title>
 </head>
 
 <body>
+   <header class="header">
+      <nav class="nav">
+         <ul class="nav-list">
+            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#about-me" class="nav-link">About me</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#code" class="nav-link">Code Example</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+            <li class="nav-item"><a href="#firstproject" class="nav-link">Projects</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main class="container">
+      <div class="two-column-container">
+         <div class="ava"><img src="./me.jpg" alt="my photo"></div>
+         <h1 class="itsme">Pawel Makarewicz</h1>
+      </div>
+      <div class="">
+         <!--============================ Section(Contact)START ====================================-->
+         <section class="section" id="contacts">
+            <h2 class="Section-Title">Contacts</h2>
+            <ul class="list">
+               <li>Phone:<span class="highlight"> +48 732 827 792</span></li>
+               <li>Email: <span class="highlight"> pawelmakarewicz.1996@gmail.com</span></li>
+               <li>GitHub: <span class="highlight">pawelmakarewicz</span></li>
+            </ul>
+         </section>
+         <!--============================ Section(Contact)END ====================================-->
+         <!--============================ Section(About Me)START ================================-->
+         <section class="section" id="about-me">
+            <h2 class="section-title">About me</h2>
+            <p>Engineer who has strong attention to details, welling to learn and develop new skills , deadline
+               orientated, and good team player.</p>
+         </section>
+         <!--============================ Section(About Me)END ================================-->
+         <!--============================ Section(Skills) START ================================-->
+         <section class="section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul class="list">
+               <li>JavaScript (Basic)</li>
+               <li>Git</li>
+               <li>HTML/CSS</li>
+            </ul>
+         </section>
+         <!--============================ Section(Skills)END ================================-->
+         <!--============================ Section(CODE) START ================================-->
+         <section class="section" id="code">
+            <h2 class="section-title">Code Example</h2>
+            <pre>
+               <code>
+                  function getDistance(speed, time) {
+                     let distance = speed * time;
+                     return distance;
+                     if (speed < 0) {
+                     distance *= -1;
+                      }
+                     } 
+               </code>
+            </pre>
 
+         </section>
+         <!--============================ Section(CODE) END ================================-->
+         <!--============================ Section(experience) START ================================-->
+         <section class="section" id="experience">
+            <h2 class="section-title">Experience</h2>
+            <h3 class="job title">Project Engineer</h3>
+            <ul class="list">
+               <li>Supervising the work of the team in BIM model</li>
+               <li>Scripting the geometry of structural elements using visual programming language such as Grasshopper
+               </li>
+            </ul>
+         </section>
+         <!--============================ Section(experience) END ================================-->
+         <!--============================ Section(Education) START ================================-->
+         <section class="section" id="education">
+            <h2 class="section-title">Education</h2>
+            <ul class="list">
+               <li>Master of Science: Construction Engineering</li>
+               <li>Bachelor of Science: Civil Engineering</li>
+            </ul>
+            <p>Cracow University of Technology</p>
+         </section>
+         <!--============================ Section(Education) END ================================-->
+         <!--============================ Section(LG) START ================================-->
+         <section class="section" id="languages">
+            <h2 class="section-title">Languages</h2>
+            <ul class="list">
+               <li>Russian - native speaker</li>
+               <li>English - B1</li>
+               <li>Polish - C1</li>
+            </ul>
+         </section>
+         <section class="section" id="">
+            <h2 class="section-title">Projects</h2>
+            <ul class="list">
+               <li><a href="">CV</a></li>
+            </ul>
+         </section>
+      </div>
+   </main>
+   <footer class="footer">
+      <div class="container footer-container">
+         <div class="footer-picture">
+            <a href="https://github.com/pawelmakarewicz?tab=repositories">
+               <img src="./assets/img/logo-github.svg" alt="my photo">
+            </a>
+         </div>
+         <span>2022</span>
+         <div class="footer-picture">
+            <a href="https://rs.school/js-stage0/">
+               <img src="./assets/img/rs_school_js.svg" alt="rs_school_js">
+            </a>
+         </div>
+      </div>
+   </footer>
 </body>
 
 </html>
